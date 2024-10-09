@@ -5,12 +5,12 @@ V drugi, popravljeni različici, popravite implementacijo tako, da se bosta toč
 ustvarili v dani ravnini in da bo program poleg ploščine izračunal in izpisal tudi obseg
 pravokotnika. */
 
-public class vaja6 {
+public class vaja62 {
     public static void main(String[] args) {
-        int x1 = 5;
-        int y1 = 5;
-        int x2 = 15;
-        int y2 = 15;
+        int x1 = (int) (Math.random() * 30);
+        int y1 = (int) (Math.random() * 30);
+        int x2 = (int) (Math.random() * 30);
+        int y2 = (int) (Math.random() * 30);
 
         int len1 = Math.abs(x2 - x1);
         int len2 = Math.abs(y2 - y1);
