@@ -23,7 +23,7 @@ public class vaja6 {
     public static void main(String[] args) {
         int height = 16;
         int width = 80;
-        
+
         char[][] screen = new char[height][width];
         for (int i = 0; i < height; i++) {
             for (int j = 0; j < width; j++) {
@@ -39,15 +39,23 @@ public class vaja6 {
             int left = (width - a) / 2;
             int right = (width + a) / 2 - 1;
 
-            for (int j = left; j <= right; j++) {
+            //vodoravne
+            for (int j = left + 1; j < right; j++) {
                 screen[top][j] = '-';
                 screen[bottom][j] = '-';
             }
 
-            for (int i = top; i <= bottom; i++) {
+            // navpične
+            for (int i = top + 1; i < bottom; i++) {
                 screen[i][left] = '|';
                 screen[i][right] = '|';
             }
+
+            // robovi
+            screen[top][left] = '+';
+            screen[top][right] = '+';
+            screen[bottom][left] = '+';
+            screen[bottom][right] = '+';
 
             a -= 8;
             b -= 2;
