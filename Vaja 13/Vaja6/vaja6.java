@@ -9,10 +9,6 @@
            primerjav.
         d) Spišite test (metodo?), ki bo 1000x izvedla iskanje naključnega elementa iz tabele in
            izračunajte povprečno število primerjav. Zapišite to število.
-    Vprašanja, na katera morate znati odgovoriti so:
-        Kateri element najdalj iščemo v zaporedju (najdalj je: za katerega 'porabimo' največ primerjav(if-ov)?
-        Katerega iščemo najmanj časa? Kolikšno je povprečje pri iskanju ? Kako je število primerjav odvisno
-        od števila elementov v zaporedju ? logaritemsko, linearno, kvadratično, exponencialno
 */
 
 public class vaja6 {
