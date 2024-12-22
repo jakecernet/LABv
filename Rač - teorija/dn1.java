@@ -35,7 +35,12 @@ public class dn1 {
         System.out.println();
         Scanner sc = new Scanner(System.in);
         System.out.println("Vnesi stevilo: ");
-        int stevilo = sc.nextInt();
+        int stevilo = 0;
+        for (int i = 0; !(i < 10 && i > 0); i++) {
+            stevilo = sc.nextInt();
+            i = stevilo;
+        }
+
         izpisiVeckratnike(tab, stevilo);
         sc.close();
 
