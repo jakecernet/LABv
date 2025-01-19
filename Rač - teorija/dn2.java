@@ -1,5 +1,5 @@
 /* 
-    Funkcija, ki v tabeli 15 cifer poišče bloke trerh zaporednih sodih števil in izpiše število blokov.
+    Funkcija, ki v tabeli 15 cifer poišče bloke natanko treh zaporednih sodih števil in izpiše število blokov.
 */
 
 public class dn2 {
@@ -17,7 +17,9 @@ public class dn2 {
         int stevec = 0;
         for (int i = 0; i < tabela.length - 2; i++) {
             if (tabela[i] % 2 == 0 && tabela[i + 1] % 2 == 0 && tabela[i + 2] % 2 == 0) {
-                stevec++;
+                if (i + 3 >= tabela.length || tabela[i + 3] % 2 != 0) {
+                    stevec++;
+                }
             }
         }
         return stevec;
