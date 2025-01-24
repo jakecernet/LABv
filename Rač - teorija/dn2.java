@@ -18,7 +18,9 @@ public class dn2 {
         for (int i = 0; i < tabela.length - 2; i++) {
             if (tabela[i] % 2 == 0 && tabela[i + 1] % 2 == 0 && tabela[i + 2] % 2 == 0) {
                 if (i + 3 >= tabela.length || tabela[i + 3] % 2 != 0) {
+if(!tabela[i-1] || tabela[i-1] % 2 != 0){
                     stevec++;
+}
                 }
             }
         }
