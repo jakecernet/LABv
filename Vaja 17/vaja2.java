@@ -47,6 +47,7 @@ public class vaja2 {
             System.out.print("-");
         }
         System.out.println();
+
         for (int i = 0; i < tabela.length; i++) {
             System.out.print("|");
             if (tabela[i] == 0) {
@@ -56,6 +57,7 @@ public class vaja2 {
             }
         }
         System.out.println("|");
+        
         for (int i = 32; i >= 0; i--) {
             System.out.print("-");
         }
