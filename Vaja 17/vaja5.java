@@ -43,17 +43,17 @@ public class vaja5 {
     public static void izpisiRazlike(int[] tabela) {
         float povprecje = povprecje(tabela);
         for (int i = 0; i < tabela.length; i++) {
-            if (Math.abs((float)tabela[i] - povprecje) > 10) {
+            if (Math.abs((float) tabela[i] - povprecje) > tabela[i] * 0.1) {
                 System.out.print(tabela[i] + " ");
             }
-        }
-        System.out.println();
+        }System.out.println();
+
     }
 
     public static void izpisiValidne(int[] tabela) {
         float povprecje = povprecje(tabela);
         for (int i = 0; i < tabela.length; i++) {
-            if (Math.abs((float)tabela[i] - povprecje) < 10) {
+            if (Math.abs((float) tabela[i] - povprecje) < 10) {
                 System.out.print(tabela[i] + " ");
             }
         }

@@ -18,6 +18,7 @@ public class vaja6 {
         System.out.println(zaporedje(8));
         System.out.println(zaporedje(9));
         System.out.println(zaporedje(10));
+        System.out.println(zaporedje(100));
     }
 
     public static int zaporedje(int n) {
