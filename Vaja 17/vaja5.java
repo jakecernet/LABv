@@ -53,7 +53,7 @@ public class vaja5 {
     public static void izpisiValidne(int[] tabela) {
         float povprecje = povprecje(tabela);
         for (int i = 0; i < tabela.length; i++) {
-            if (Math.abs((float) tabela[i] - povprecje) < 10) {
+            if (Math.abs((float) tabela[i] - povprecje) < tabela[i] * 0.1) {
                 System.out.print(tabela[i] + " ");
             }
         }
