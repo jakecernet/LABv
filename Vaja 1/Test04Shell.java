@@ -1,5 +1,5 @@
-class Test04Shell{
-public static void main(String[] args){
-println("Test uspesen …….");
-}
+class Test04Shell {
+    public static void main(String[] args) {
+        println("Test uspesen …….");
+    }
 }
