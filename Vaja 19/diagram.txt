@@ -1,0 +1,46 @@
++----------------------------------+
+|              Oseba               |
++----------------------------------+
+| - ime: String                    |
+| - priimek: String                 |
+| - spol: String                    |
+| - razred: String                  |
+| - vpisnaStevilka: int             |
++----------------------------------+
+| + Oseba(ime, priimek, spol, razred, vpisnaStevilka) |
+| + Oseba()                           |
+| + getIme(): String                   |
+| + setIme(ime: String)                |
+| + getPriimek(): String               |
+| + setPriimek(priimek: String)        |
+| + getSpol(): String                  |
+| + setSpol(spol: String)              |
+| + getRazred(): String                |
+| + setRazred(razred: String)          |
+| + siDekle(): boolean                 |
+| + kakoTiJeIme(): String              |
+| + biŠlaNaZmenek(): boolean           |
+| + grevaNaSok(): boolean              |
++----------------------------------+
+
+
+
++------------------------------------------------+
+| Janez : Oseba                                  |
++------------------------------------------------+
+| ime = "Janez"                                  |
+| priimek = "Novak"                              |
+| spol = "m"                                     |
+| razred = "g3a"                                 |
+| vpisnaStevilka = 12345                         |
++------------------------------------------------+
+
++------------------------------------------------+
+| Metka : Oseba                                  |
++------------------------------------------------+
+| ime = "Metka"                                  |
+| priimek = "Kovač"                              |
+| spol = "ž"                                     |
+| razred = "g3b"                                 |
+| vpisnaStevilka = 67890                         |
++------------------------------------------------+
