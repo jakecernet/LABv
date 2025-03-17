@@ -46,8 +46,6 @@ public class naloga2 {
  * @method getX() Vrne X koordinato lika.
  * @method getY() Vrne Y koordinato lika.
  * 
- * @throws IllegalArgumentException Če je podana napačna smer.
- * 
  * @example
  *          Lik lik1 = new Lik(0, 0);
  *          Lik lik2 = new Lik(5, 5, "gor");

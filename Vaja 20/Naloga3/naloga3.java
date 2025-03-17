@@ -1,3 +1,6 @@
+import java.util.ArrayList;
+import java.util.Random;
+
 /*
     Javanski program kreira 15 objektov tipa lik in jih shrani v ustrezno tabelo. Pozicijo prvega lika ustvarite
     naključno v ravnini (obseg naj bo [-50,50][-50,50]). Vsak naslednji naj bo za 3 enote oddaljen v smeri, ki jo
@@ -14,46 +17,154 @@
 */
 
 public class naloga3 {
+    static class Lik {
+        private int x;
+        private int y;
+        private Smer smer;
+
+        private static class Smer {
+            private String smer;
+
+            public Smer(String smer) {
+                this.smer = smer;
+            }
+
+            public String getSmer() {
+                return smer;
+            }
+
+            public void obrniDesno() {
+                switch (smer) {
+                    case "gor":
+                        smer = "desno";
+                        break;
+                    case "desno":
+                        smer = "dol";
+                        break;
+                    case "dol":
+                        smer = "levo";
+                        break;
+                    case "levo":
+                        smer = "gor";
+                        break;
+                }
+            }
+
+            public void obrniLevo() {
+                switch (smer) {
+                    case "gor":
+                        smer = "levo";
+                        break;
+                    case "levo":
+                        smer = "dol";
+                        break;
+                    case "dol":
+                        smer = "desno";
+                        break;
+                    case "desno":
+                        smer = "gor";
+                        break;
+                }
+            }
+        }
+
+        public Lik(int x, int y, String smer) {
+            this.x = x;
+            this.y = y;
+            this.smer = new Smer(smer);
+        }
+
+        public Lik(int x, int y) {
+            this(x, y, "gor");
+        }
+
+        public Lik() {
+            this(0, 0, "gor");
+        }
+
+        public void premakni() {
+            switch (smer.getSmer()) {
+                case "gor":
+                    y++;
+                    break;
+                case "dol":
+                    y--;
+                    break;
+                case "levo":
+                    x--;
+                    break;
+                case "desno":
+                    x++;
+                    break;
+            }
+        }
+
+        public void obrniLevo() {
+            smer.obrniLevo();
+        }
+
+        public void obrniDesno() {
+            smer.obrniDesno();
+        }
+
+        public int getX() {
+            return x;
+        }
+
+        public int getY() {
+            return y;
+        }
+    }
+
     public static void main(String[] args) {
-        Lik[] tabelaLikov = new Lik[15];
-        tabelaLikov[0] = new Lik((int)(Math.random()*100-50), (int)(Math.random()*100-50));
-        for (int i = 1; i < tabelaLikov.length; i++) {
-            tabelaLikov[i] = new Lik(tabelaLikov[i-1].getX() + 3, tabelaLikov[i-1].getY() + 3);
+        Random rand = new Random();
+        ArrayList<Lik> liki = new ArrayList<>();
+
+        // Ustvari prvi lik z naključno pozicijo in smerjo
+        int x = rand.nextInt(101) - 50;
+        int y = rand.nextInt(101) - 50;
+        String[] smeri = { "gor", "dol", "levo", "desno" };
+        String smer = smeri[rand.nextInt(smeri.length)];
+        liki.add(new Lik(x, y, smer));
+
+        // Ustvari preostalih 14 likov
+        for (int i = 1; i < 15; i++) {
+            Lik prejsnji = liki.get(i - 1);
+            Lik novLik = new Lik(prejsnji.getX(), prejsnji.getY(), prejsnji.smer.getSmer());
+            novLik.premakni();
+            liki.add(novLik);
+            smer = smeri[rand.nextInt(smeri.length)];
         }
-        for (int i = 0; i < tabelaLikov.length; i++) {
-            System.out.println(tabelaLikov[i]);
+
+        // Vizualizacija pozicij
+        System.out.println("Pozicije likov:");
+        for (Lik lik : liki) {
+            System.out.println("(" + lik.getX() + ", " + lik.getY() + ")");
         }
+
+        // Gibanje likov za 10 premikov
         for (int i = 0; i < 10; i++) {
-            tabelaLikov[0] = tabelaLikov[tabelaLikov.length-1];
-            for (int j = tabelaLikov.length-1; j > 0; j--) {
-                tabelaLikov[j] = tabelaLikov[j-1];
-            }
-            tabelaLikov[0] = new Lik(tabelaLikov[1].getX() + 3, tabelaLikov[1].getY() + 3);
-            for (int j = 0; j < tabelaLikov.length; j++) {
-                System.out.println(tabelaLikov[j]);
-            }
+            liki.remove(0);
+            Lik zadnji = liki.get(liki.size() - 1);
+            Lik novLik = new Lik(zadnji.getX(), zadnji.getY(), zadnji.smer.getSmer());
+            novLik.premakni();
+            liki.add(novLik);
         }
-    }
-}
 
-class Lik {
-    private int x;
-    private int y;
+        // Obrni desno in naredi še 10 korakov
+        Lik zadnji = liki.get(liki.size() - 1);
+        zadnji.obrniDesno();
+        for (int i = 0; i < 10; i++) {
+            liki.remove(0);
+            Lik novLik = new Lik(zadnji.getX(), zadnji.getY(), zadnji.smer.getSmer());
+            novLik.premakni();
+            liki.add(novLik);
+        }
 
-    public Lik(int x, int y) {
-        this.x = x;
-        this.y = y;
-    }
-
-    public int getX() {
-        return x;
-    }
-
-    public int getY() {
-        return y;
-    }
-
-    public String toString() {
-        return "x: " + x + ", y: " + y;
+        // Končne pozicije
+        System.out.println("Končne pozicije likov:");
+        for (Lik lik : liki) {
+            System.out.println("(" + lik.getX() + ", " + lik.getY() + ")");
+        }
     }
 }
