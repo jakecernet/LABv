@@ -1,0 +1,14 @@
+Diagram:
+
+-----------------------
+|         Smer        |
+-----------------------
+| - smer: String      |
+-----------------------
+| + Smer()            |
+| + Smer(smer: String)|
+| + getSmer(): String |
+| + obrniLevo(): void |
+| + obrniDesno(): void|
+| + toString(): String|
+-----------------------
