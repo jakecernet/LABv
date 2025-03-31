@@ -155,7 +155,7 @@ public class vaja7 {
       // Končne pozicije
       System.out.println("Končne pozicije likov:");
       for (Lik lik : liki) {
-         System.out.println("(" + lik.getX() + ", " + lik.getY() + ")");
+         System.out.println("(" + lik.getX() + ", " + lik.getY() + ", " + lik.smer.getSmer() + ")");
       }
    }
 }
