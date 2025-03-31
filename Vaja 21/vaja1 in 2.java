@@ -1,0 +1,1 @@
+//isto kot pri prejšnji vaji
