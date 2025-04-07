@@ -1,0 +1,34 @@
++------------------------------+
+|           Drevo              |
++------------------------------+
+| - vrsta: String              |
+| - letnica: int               |
+| - obseg: double              |
+| - visina: double             |
++------------------------------+
+| + Drevo(vrsta: String,       |
+|         letnica: int,        |
+|         obseg: double,       |
+|         visina: double)      |
+| + getVrsta(): String         |
+| + getLetnica(): int          |
+| + getObseg(): double         |
+| + getVisina(): double        |
+| + setVrsta(vrsta: String):   |
+|   void                       |
+| + setLetnica(letnica: int):  |
+|   void                       |
+| + setObseg(obseg: double):   |
+|   void                       |
+| + setVisina(visina: double): |
+|   void                       |
+| + izracunajPovprecnoRast():  |
+|   double                     |
+| + enakaPovprecnaRast(        |
+|   drugoDrevo: Drevo):        |
+|   boolean                    |
+| + maxRazlikaObseg(           |
+|   drevesa: Drevo[]): double  |
+| + maxRazlikaObsegRazlicneVrste(|
+|   drevesa: Drevo[]): double  |
++------------------------------+

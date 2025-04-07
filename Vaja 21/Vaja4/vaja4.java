@@ -1,3 +1,5 @@
+package Vaja4;
+
 /* 
 Metoda toString v Krogec ni ustrezna. Radija ne dobite vizualiziranega. Popravite mehanizem tako, da se bo izpisal
 še radij krožnice. (prekrivanje/overrun metode)

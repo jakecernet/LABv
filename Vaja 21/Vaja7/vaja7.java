@@ -1,3 +1,5 @@
+package Vaja7;
+
 
 /* 
 Naredite še specializacijo Lik v Trikotnik. Ta je opredeljen s koordinatami svojih oglišč. Eno izmed oglišč
