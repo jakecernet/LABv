@@ -1,0 +1,20 @@
+Class Diagram: Ulomek
+
++-------------------+
+|      Ulomek       |
++-------------------+
+| - stevec: int     |
+| - imenovalec: int |
++-------------------+
+| + Ulomek()        |
+| + Ulomek(stevec: int) |
+| + Ulomek(stevec: int, imenovalec: int) |
+| + okrajšaj(): void |
+| + enakaUlomka(drugi: Ulomek): boolean |
+| + toString(): String |
+| + seštej(drugi: Ulomek): Ulomek |
+| + getStevec(): int |
+| + setStevec(stevec: int): void |
+| + getImenovalec(): int |
+| + setImenovalec(imenovalec: int): void |
++-------------------+
