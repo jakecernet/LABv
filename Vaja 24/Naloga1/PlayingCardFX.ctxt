@@ -1,0 +1,20 @@
+#BlueJ class context
+comment0.target=PlayingCardFX
+comment0.text=\r\n\ Test\ JavaFX\ application\ to\ demonstrate\ PlayingCard.\r\n
+comment1.params=faceUrl\ backUrl\ suitAndValue
+comment1.target=PlayingCard(java.lang.String,\ java.lang.String,\ java.lang.String)
+comment1.text=\r\n\ Constructs\ a\ PlayingCard.\r\n\ \r\n\ @param\ faceUrl\ \ \ \ \ \ URL\ or\ path\ to\ the\ face\ image\r\n\ @param\ backUrl\ \ \ \ \ \ URL\ or\ path\ to\ the\ back\ image\r\n\ @param\ suitAndValue\ string\ code\ of\ the\ card,\ e.g.\ "H7"\r\n
+comment2.params=
+comment2.target=void\ swap()
+comment2.text=\r\n\ Swap\ face\ and\ back.\r\n
+comment3.params=
+comment3.target=java.lang.String\ getValue()
+comment3.text=\r\n\ Returns\ the\ card\ code,\ e.g.\ H7.\r\n
+comment4.params=
+comment4.target=java.lang.String\ getState()
+comment4.text=\r\n\ Returns\ "face"\ or\ "back"\ depending\ on\ state.\r\n
+comment5.params=primaryStage
+comment5.target=void\ start(javafx.stage.Stage)
+comment6.params=args
+comment6.target=void\ main(java.lang.String[])
+numComments=7
