@@ -1,0 +1,23 @@
+#BlueJ class context
+comment0.target=DuelGameFX
+comment1.params=
+comment1.target=void\ premesajKarte()
+comment10.params=args
+comment10.target=void\ main(java.lang.String[])
+comment2.params=primaryStage
+comment2.target=void\ start(javafx.stage.Stage)
+comment3.params=
+comment3.target=void\ novaIgra()
+comment4.params=
+comment4.target=void\ razkrijKarto1()
+comment5.params=
+comment5.target=void\ razkrijKarto2()
+comment6.params=
+comment6.target=void\ preveriZmagovalca()
+comment7.params=
+comment7.target=void\ naslednjaRunda()
+comment8.params=k1\ k2
+comment8.target=int\ primerjaj(Karta,\ Karta)
+comment9.params=
+comment9.target=void\ premesajKarte()
+numComments=11

@@ -1,0 +1,15 @@
+#BlueJ class context
+comment0.target=KartaDemo
+comment1.params=
+comment1.target=void\ obrni()
+comment2.params=
+comment2.target=int\ vrniVrednostKarte()
+comment3.params=
+comment3.target=char\ vrniBarvoKarte()
+comment4.params=
+comment4.target=boolean\ jeLice()
+comment5.params=primaryStage
+comment5.target=void\ start(javafx.stage.Stage)
+comment6.params=args
+comment6.target=void\ main(java.lang.String[])
+numComments=7

@@ -1,0 +1,53 @@
+lav03     Laboratorijska vaja 23
+           (draft, april.2025)
+
+
+ButtonMania II
+
+V nalogi 1 vaje 22 smo definirali karto kot gumb z dvema slikama, ki sta predstavljala lice in hrbet karte. Karta v tej nalogi
+implementira vmesnik Obracalna:
+
+interface Obracalna {
+      public void obrni();              // zamenja lice s hrbtom in obratno
+      public int vrniVrednostKarte();   // vrne vrednost karte: 2,3,4, …., 9,10,11,12,13,14 ne glede na barvo
+      public char vrniBarvoKarte();     // vrne eno od H,D,S,C
+      public boolean jeLice();          // vrne stanje obrnjenosti karte
+}
+
+
+
+1. Izdelajte razred Karta izveden iz javafx.scene.controls.utton, z dodatno lastnostjo +še ene slike+, ki bo implementiral zahteve danega vmesnika. 
+Gumb mora ob kliku zamenjati na sebi prikazano sliko. Na gumbu naj ne bo ničesar razen slike, dogodek (event,klik) naj bo na gumb navezan ob konstrukciji 
+objekta (karta je +clickable+ tisti trenutek, ko jo naredimo)
+
+
+
+2. Razred Duel implementira igro 'Vojna', igre za 2 igralca, pri kateri sta na mize z licem obrnjeni zgolj dve karti, vsakega igralca po ena. Večja karta zagotavlja vzetek obeh kart. 'Vojne', stanja dveh enakih kart v tej realizaciji ni potrebno implementirati: predpostavite, da je
+H>D>S>C. 
+Igro realizirate kot dogodkovno usmerjeno aplikacijo z dvema dodatnima gumboma: prvi postavi igro v začetni položaj, drugi izvaja korak igre.
+Korak igre se izvede kot : 
+a) obrne karto igralca
+    avtomatično se obrne tudi karta drugega igralca(računalnik?)
+b) zapis vzetka
+    izračuna se, katera karta je večja
+    vzetek se pospravi na kup vzetkov igralca z večjo karto
+    preveri se morebiten konec igre
+    preveri se ali je igralcema zmanjkalo kart v roki : zamenja se kup vzetkov z roko
+/ očitno ima gumb 'korak' 2 vlogi oz. 2 stanji/
+opombe:
+Igra se z 52 kartami;         tabela 52 kart  
+   zagotovite začetno mešanje z impemetacijo :
+
+   interface Mesalna {
+       public void premesajKarte();
+   }
+
+
+ob inicializaciji igre se karte v roki razdelijo na pol (2x26), vendar ob obratu pričakuje neeneakomerna porazdelitev - 2 tabeli po 52 kart
+vzetki so neenakomerno porazdeljeni : 2 tabeli po 52 kart
+
+končna realizacija se prepušča izvedbi.
+
+mašanje kart dodamo kot princip, ki ga je potrebno implementirati :
+class Duel ...... impelements Mesalna {
+
