@@ -1,13 +1,12 @@
-vsebina:
- objekti
-   kreiranje objektov,
-   osnovno delo z objekti
+# Vsebina:
+- objekti  
+  - kreiranje objektov,  
+  - osnovno delo z objekti  
 
-Naloga 1
-Dan je program s katerim kreiramo nekaj primerov objektov. Na označeni točki dodajte
-izpise (vsebine) vseh objektov, ki so nastali v programu pred to točko in odgovorite
-na spodnja vprašanja.
+## Naloga 1
+Dan je program s katerim kreiramo nekaj primerov objektov. Na označeni točki dodajte izpise (vsebine) vseh objektov, ki so nastali v programu pred to točko in odgovorite na spodnja vprašanja.
 
+```java
 import java.util.Scanner;
 
 /**
@@ -30,17 +29,18 @@ public class Zero_00_a {
     scan.next();       
   }
 }
+```
 
-Dopolnite:
-V gornjem primeru kreiramo 3 objekte. Ti objekti so poimenovani ______, _________, __________.
-Objekt dejansko nastane s tem, ko se pojavi v pomnilniku po tem, ko izvedemo
-kreiranje z uporabo operatorja _______.
+### Dopolnite:  
+V gornjem primeru kreiramo 3 objekte. Ti objekti so poimenovani ______, _________, __________.  
+Objekt dejansko nastane s tem, ko se pojavi v pomnilniku po tem, ko izvedemo  kreiranje z uporabo operatorja _______.  
 
-Naloga 2
-Dan je program, ki izkorišča definicijo razreda Integer kot generator objektov.
-Definicja razreda služi kot predloga za objekte. Oglejte si ga in odgovorite
-na zahtevano spodaj.
+---
+## Naloga 2
+Dan je program, ki izkorišča definicijo razreda Integer kot generator objektov. 
+Definicja razreda služi kot predloga za objekte. Oglejte si ga in odgovorite na zahtevano spodaj.
 
+```java
 import java.util.Scanner;
 import java.util.Arrays;
 
@@ -72,12 +72,15 @@ public class Zero_00_b {
     scan.next();       
   }
 }
+```
 
-V izvedbi zgornjega programa (driver oz. zagonske metode) smo ustvari natanko ______ objektov. 
-Ustvarjeni objekti so vrst:___________________________________________________________.
-Pri tem je bilo največ ustvarjenih objektov vrst ___________________ in sicer smo jih naredili ______ .
+V izvedbi zgornjega programa (driver oz. zagonske metode) smo ustvari natanko ______ objektov.  
+Ustvarjeni objekti so vrst:___________________________________________________________.  
+Pri tem je bilo največ ustvarjenih objektov vrst ___________________ in sicer smo jih naredili ______ .  
 
-Naloga 3
+---
+## Naloga 3
+```java
 import java.util.Arrays;
 
 /**
@@ -112,12 +115,13 @@ class ZeroTocka {
   double x;
   double y;
 }
+```
 
-Naloga 4
-Za osvežitev spomina; dan je program, ki uporabi razred z razrednim (statičnim) kontekstom.
-Oglejte si načine naslavljanja lastnosti in njihove značilnosti, nato odgovorite na vprašanja
-spodaj
+---
+## Naloga 4
+Za osvežitev spomina; dan je program, ki uporabi razred z razrednim (statičnim) kontekstom. Oglejte si načine naslavljanja lastnosti in njihove značilnosti, nato odgovorite na vprašanja spodaj.
 
+```java
 /**
  *   razred;
  *   celoten kontekst je razredne vrste
@@ -158,21 +162,20 @@ public class Zero_01 {
   }
 
 }
+```
 
-Potrdite ali zavrzite izjave (nanašajo se na definicijo razreda Zero_01_ra):
-a) ne glede na to koliko objektov naredimo, imamo na razpolago zgolj en nabor podatkov
-b) vsi objekti iste vrste (v primeru tipa Zero_01_ra) si očitno 'delijo' iste podatke 
-c) z vsebino razreda lahko manipuliramo (spreminjamo, nastavljamo, ...) ne da bi bilo potrebno
-   narediti kakršen koli objekt
-d) tudi razredno metodo lahko kličemo, ne da bi bilo predhodno potrebno ustvariti objekt
+Potrdite ali zavrzite izjave (nanašajo se na definicijo razreda Zero_01_ra):  
+- a) ne glede na to koliko objektov naredimo, imamo na razpolago zgolj en nabor podatkov  
+- b) vsi objekti iste vrste (v primeru tipa Zero_01_ra) si očitno 'delijo' iste podatke  
+- c) z vsebino razreda lahko manipuliramo (spreminjamo, nastavljamo, ...) ne da bi bilo potrebno  
+   narediti kakršen koli objekt  
+- d) tudi razredno metodo lahko kličemo, ne da bi bilo predhodno potrebno ustvariti objekt  
 
-Naloga 5
-Malo začinimo nalogo 3 te vaje in jo vizualizirajmo. Uporabili bomo tehnologijo (ogrodje) FX, 
-točke pa vizualizirali kot krožnico z radijem 3. Da ne bo pretežko, je na voljo del programa
-z izrisanim koordinatnim sistemom in eno točko (krožnico). Predlagam, da uporabite točke, kot 
-v nalogi 3, FX pa uporabite zgolj kot vizualizacijo.
-Naprej preglejte naslednje
+---
+## Naloga 5
+Malo začinimo nalogo 3 te vaje in jo vizualizirajmo. Uporabili bomo tehnologijo (ogrodje) FX, točke pa vizualizirali kot krožnico z radijem 3. Da ne bo pretežko, je na voljo del programa z izrisanim koordinatnim sistemom in eno točko (krožnico). Predlagam, da uporabite točke, kot  v nalogi 3, FX pa uporabite zgolj kot vizualizacijo.  Naprej preglejte naslednje:
 
+```java
 import javafx.application.Application;
 import javafx.scene.Group;
 import javafx.scene.shape.Circle;
@@ -223,18 +226,21 @@ public class Two_00 extends Application {
     stage.show();   
   }
 }
+```
 
-- dodajte 150 točk (tabela 150 točk) - po dodajanju skušajte vizualizirati
-- po kreiranju točk določite najbolj oddaljeno, določite črto med to točko in 0,0, jo dodajte
-  v grupo g, - vizualizirajte
-- po določitvi črte, poiščite točko najbližjo povprečju razdalje, obarvajte (fill) jo zeleno
-* seveda je celoten zahtevan izpis iz naloge 3 v konzoli (terminalu) še vedno zaželen, ni
-  pa obvezen, ker imamo sedaj drug način vizualizacije
+---
+- dodajte 150 točk (tabela 150 točk) - po dodajanju skušajte vizualizirati  
+- po kreiranju točk določite najbolj oddaljeno, določite črto med to točko in 0,0, jo dodajte  
+  v grupo g, - vizualizirajte  
+- po določitvi črte, poiščite točko najbližjo povprečju razdalje, obarvajte (fill) jo zeleno  
+* seveda je celoten zahtevan izpis iz naloge 3 v konzoli (terminalu) še vedno zaželen, ni  
+  pa obvezen, ker imamo sedaj drug način vizualizacije  
 
-Naloga 6
-V vsakem izmed kvadrantov bi želeli zgenerirati po 100 točk, recimo, da je celotna ravnina
-v obsegu [-200, 200]. S črto(ami) bi želeli medseboj povezati tiste točke, ki so v vsakem 
+---
+## Naloga 6
+V vsakem izmed kvadrantov bi želeli zgenerirati po 100 točk, recimo, da je celotna ravnina  
+v obsegu [-200, 200]. S črto(ami) bi želeli medseboj povezati tiste točke, ki so v vsakem  
 posameznem kvadrantu najbolj oddaljene od koordinatnega izhodišča.
 
-p.s.
+p.s.  
 Če ste tole izvedli, ste naredili več kot 600 objektov pri enkratni izvedbi nalog.

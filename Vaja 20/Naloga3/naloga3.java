@@ -1,6 +1,3 @@
-import java.util.ArrayList;
-import java.util.Random;
-
 /*
     Javanski program kreira 15 objektov tipa lik in jih shrani v ustrezno tabelo. Pozicijo prvega lika ustvarite
     naključno v ravnini (obseg naj bo [-50,50][-50,50]). Vsak naslednji naj bo za 3 enote oddaljen v smeri, ki jo
@@ -15,6 +12,9 @@ import java.util.Random;
     c) preverite pravilnost delovanja še s postopkom:
         - naredi 10 korakov dani smeri, nato obrniDesno, naredi še 10 korakov 
 */
+
+import java.util.ArrayList;
+import java.util.Random;
 
 public class naloga3 {
     static class Lik {

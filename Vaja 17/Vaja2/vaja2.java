@@ -12,6 +12,7 @@ pri negativni vrednosi -10599, naj bo vsebina tabele:
 |' '|' '|' '|' '|' '|' '|' '|' '|' '|' '|'-'|'1'|'0'|'5'|'9'|'9'|
 -----------------------------------------------------------------
 */
+
 import java.util.Scanner;
 
 public class vaja2 {

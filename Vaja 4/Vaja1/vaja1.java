@@ -1,4 +1,4 @@
-public class pravokotnik {
+public class vaja1 {
     public static void main(String[] args) {
         int x1 = Integer.parseInt(args[0]);
         int y1 = Integer.parseInt(args[1]);
