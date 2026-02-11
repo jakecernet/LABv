@@ -14,7 +14,7 @@
        metoda podcrtaj() se kliče 2x
 */
 
-public class Vaja1 {
+public class vaja1 {
     public static void main(String[] args) {
         System.out.println("Začetek:");
         podcrtaj(); // klic metode podcrtaj()
