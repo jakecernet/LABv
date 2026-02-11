@@ -53,7 +53,7 @@ d) Kaj se spremeni, če v zanki pred if spremenimo vrednost spremenljivke pogoj 
 
 */
 
-public class Naloga1 {
+public class vaja1 {
     public static void main(String[] args) {
         int i;
         boolean pogoj;

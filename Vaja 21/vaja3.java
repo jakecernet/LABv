@@ -1,5 +1,3 @@
-package Vaja3;
-
 /* 
 Lik specializiramo v krožnico (Krogec) s tem da dodamo lastnosti, ki opredelijo krožnico : 
 središče(ravninska koordinata), radij (neceloštevilska vrednost). Npr.

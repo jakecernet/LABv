@@ -1,5 +1,3 @@
-package Vaja5;
-
 /* 
 V definicijo Krogec dodajte metodi, ki bosta izračunali in vrnili obseg ter ploščino krožnice na osnovi radija
 zapisanega v objektu.
